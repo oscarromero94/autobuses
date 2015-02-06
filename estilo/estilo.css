@@ -1,0 +1,120 @@
+@font-face{
+	font-family: "letra1";
+    src: url("../AniTypewriter.ttf");
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    
+}
+#cabezeraUsuario{
+	width: 100%;
+	height: 70px;
+	background-color: rgba(0, 0, 0, 0.4);
+	visibility: visible;
+}
+head{
+	width: 100%;
+	height: 10%;
+}
+#user{
+	background-image: url(../fondo3.jpeg);
+	background-repeat: no-repeat;
+	height: auto;
+}
+#logo{
+	height: 100%;
+	margin-left: 40%;
+	visibility: hidden;
+}
+#sesion{
+	font-family: "letra1", serif;
+	margin: 16% auto;
+	display: block;
+	width: 150px;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 15px 15px;
+	padding: 2em;
+	color: #8BC34A;
+	font-size: 1.3em;
+	box-shadow: -2px 0px 16px 14px rgba(139,195,74,0.4);
+}
+.campo{
+	font-family: "letra1", serif;
+	padding: 0.2em;
+	background-color: rgba(0, 0, 0, 0.4);
+	color:#fff;
+	width: 155px;
+}
+.boton{
+	font-family: "letra1", serif;
+	margin-top: 10%;
+	padding: 0.5em;
+	margin-left: 34%;
+	background-color: #8BC34A;
+	font-weight: bold;
+	cursor:pointer;
+}
+.boton:hover{
+	background-color: rgba(0, 0, 0, 0.4);
+	color:#8BC34A;
+	box-shadow: -2px 0px 16px 10px rgba(139,195,74,0.4);
+}
+#libre{
+	width: 100px;
+}
+#mio{
+	width: 100px;
+	height: 80px;
+}
+#ocupadete{
+	width: 150px;
+	height: 100px;
+}
+#principal{
+	background-image: url(../fondo2.jpg);
+	width: auto;
+	height: auto;
+}
+/*Pruebas menu vertical*/
+ul {
+	font-family: "letra1", serif;
+	font-weight: bold;
+	height: auto;
+	margin-top: 19px;
+	margin-right: 20px;
+	float: right;
+	list-style-type: none;
+	padding: 2px;
+
+}
+li {
+	
+	background-color: rgba(0, 0, 0, 0.6);
+	display: inline-block;
+    border: 2px solid transparent;
+	border-top-left-radius: 1em 1em;
+	border-top-right-radius: 1em 1em;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	padding: 0.8em;
+	float: right;
+}
+a:hover{
+	box-shadow: -1px -9px 17px -1px rgba(139,195,74,1);
+	border-top-left-radius: 1em 1em;
+	border-top-right-radius: 1em 1em;
+}
+/*Autobuses AJAX*/
+#ssss{
+	font-family: "letra1", serif;
+	margin-left: 5%;
+	margin-top: 1%;
+	display: inline-block;
+	float: left;
+}
