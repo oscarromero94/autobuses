@@ -13,7 +13,7 @@
 	<header id="cabezeraUsuario">
 	<h1 id="ssss">Autobuses AJAX</h1>
 		<ul>
-			<li><a href="#">Confirmar compra</a></li>
+			<li><a href="confirma.php">Confirmar compra</a></li>
 			<li><a href="#">Configuracion</a></li>
 			<li><a href="index.php">Cerrar sesion</a></li>
 		</ul>

@@ -106,7 +106,7 @@ a {
 	float: right;
 }
 a:hover{
-	box-shadow: -1px -9px 17px -1px rgba(139,195,74,1);
+	color:#6154FA;
 	border-top-left-radius: 1em 1em;
 	border-top-right-radius: 1em 1em;
 }

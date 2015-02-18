@@ -52,12 +52,16 @@
 		$conexion->close();
 	}
 	function estado(){
-		echo "<form name=datos>";
+		echo "<table border=2>";
+		$contador = 0;
 		$conexion=conexion('192.168.31.3','root','root','autobuses');
 		$orden="UPDATE autobus SET ocupado=0,usuario=null,cuando=null where now()-cuando>120 AND esta=0";
 		consulta($orden,$conexion);
 		$resultset=consulta('SELECT asiento,ocupado,usuario FROM autobus',$conexion);
+		echo "<tr>";
 		while($registro = $resultset->fetch_array()){
+			
+			echo "<td>";
 		if($registro[1]==2){
 			echo '<img id=libre src=libre.png>';
 		}
@@ -70,9 +74,16 @@
 		if($registro[1]==1 && $registro[2]!=$_SESSION["usuario"]) {
 			echo "<img id=ocupadete src=ocupado.png>";
 		}
-			}
+		$contador++;
+		echo "</td>";
+		if($contador==5){
+			$contador=0;
+			echo "</tr><tr>";
+		}
+
+		}
 		$conexion->close();
-		echo "</form>";
+		echo "</table>";
 	}
 	//require_once("funciones/funciones.php");
 ?>
